@@ -10,7 +10,7 @@ read processo
 
 killProcess=$(ps aux| grep $processo| head -n1 | cut -d " " -f4)
 
-echo 'Esse é o processo que quer finalizar:' $killProcess
+echo 'Esse é o processo que quer finalizar?' $killProcess '-' $processo
 echo '1-P/Sim Ou 2-P/Não'
 read resposta
 
