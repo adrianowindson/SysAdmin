@@ -19,5 +19,5 @@ then
 	kill $killProcess
 	echo 'Finalizado'
 else
- 	echo 'Saindo do Bash' | sleep 10 | exit
+ 	echo 'Saindo do Script' ; sleep 5
 fi
