@@ -5,8 +5,7 @@
 ##################################################################
 
 
-echo 'Digite o nome do processo a ser finalizado: '
-read processo
+read -p 'Digite o nome do processo a ser finalizado: ' processo
 
 killProcess=$(ps aux| grep $processo| head -n1 | cut -d " " -f4)
 
@@ -21,3 +20,4 @@ then
 else
  	echo 'Saindo do Script' ; sleep 5
 fi
+
